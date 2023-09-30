@@ -1,0 +1,78 @@
+#hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    max-width: 630px;
+    font-size: 1.2rem;
+  }
+
+  .form {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  #carouselFade {
+    user-select: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 90vh;
+    z-index: -1;
+    overflow: hidden;
+    img {
+      filter: brightness(0.5) blur(1px);
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+}
+@media (max-width: 768px) {
+  #hero {
+    h1 {
+      font-size: 5.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+      max-width: 100%;
+    }
+  }
+}
+@media (max-width: 450px) {
+  #hero {
+    h1 {
+      font-size: 4.2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    img {
+      filter: brightness(0.5) blur(0px);
+    }
+  }
+}
+@media (max-width: 348px) {
+  #hero {
+    h1 {
+      font-size: 3.5rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}
