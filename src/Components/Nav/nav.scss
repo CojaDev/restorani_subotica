@@ -1,4 +1,8 @@
 nav {
+  .container {
+    padding: 0 20px;
+  }
+
   background: linear-gradient(180deg, #2e2e2e8f, #1b1b1b00);
   .nav-item {
     position: relative;
@@ -44,5 +48,8 @@ nav {
 @media (max-width: 348px) {
   nav {
     background: #2e2e2ede;
+    .container {
+      padding: 0 0px;
+    }
   }
 }

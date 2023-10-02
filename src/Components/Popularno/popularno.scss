@@ -1,0 +1,204 @@
+#popularno {
+  width: 100%;
+  height: 60vh;
+  .naslov {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    padding-top: 40px;
+  }
+  .wrapper {
+    position: relative;
+    transition: 0.3s ease;
+    p {
+      z-index: 2;
+      user-select: none;
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      background-color: #2e2e2e;
+      text-align: center;
+      line-height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+      color: white;
+      top: 50%;
+      transform: translateY(-50%);
+      box-shadow: 0 0px 6px rgba(214, 214, 214, 0.344);
+      font-size: 2rem;
+    }
+
+    #back {
+      left: -22px;
+    }
+
+    #next {
+      right: -22px;
+    }
+
+    .slider {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: calc((100% / 4) - 16px);
+      gap: 16px;
+      padding: 0;
+      transition: 0.3s ease;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      scrollbar-width: 0;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      &.no-transition {
+        scroll-behavior: auto;
+      }
+      &.dragging {
+        scroll-snap-type: none;
+        scroll-behavior: auto;
+        .cards {
+          cursor: grab;
+        }
+      }
+    }
+    .cards {
+      transition: 0.3s ease;
+      user-select: none;
+      height: 372px;
+      list-style: none;
+      background-color: #2e2e2e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      cursor: pointer;
+      .info {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      h2 {
+        margin: 10px 0 15px 0;
+        font-size: 1.7rem;
+      }
+      span {
+        color: #0dedfd;
+        padding: 4px 10px;
+        margin-bottom: 10px;
+        border: 2px solid #0d6efd;
+        transition: 0.2s ease;
+
+        &.ocena {
+          border-radius: 200px;
+          width: 38px;
+          height: 38px;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          color: #2e2e2e;
+          font-weight: 500;
+          &.dobra {
+            border-color: rgb(113, 255, 47);
+            background-color: rgb(113, 255, 47);
+          }
+          &.srednja {
+            border-color: yellow;
+            background-color: yellow;
+          }
+          &.losa {
+            border-color: red;
+            background-color: red;
+          }
+        }
+        &.status {
+          &.closed {
+            color: red;
+            border-color: red;
+          }
+          &.open {
+            color: rgb(113, 255, 47);
+            border-color: rgb(113, 255, 47);
+          }
+        }
+      }
+      .img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #2e2e2e;
+        border-bottom: 3px solid white;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      img {
+        width: calc(100% - 8px);
+        height: calc(100% - 8px);
+        object-fit: cover;
+        border: 2px solid #2e2e2e;
+        transition: 0.2s ease;
+        z-index: 0;
+        transform: scale(1.05);
+        filter: brightness(0.98);
+        &:hover {
+          transform: scale(1);
+          filter: brightness(0.9);
+        }
+        &:active {
+          transform: scale(0.98);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #popularno {
+    .wrapper {
+      .slider {
+        grid-auto-columns: calc((100% / 3) - 12px);
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  #popularno {
+    .wrapper {
+      p {
+        &#back {
+          left: -12px;
+        }
+
+        &#next {
+          right: -12px;
+        }
+      }
+      .slider {
+        grid-auto-columns: calc((100% / 2) - 9px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #popularno {
+    .wrapper {
+      p {
+        &#back {
+          left: 0px;
+        }
+
+        &#next {
+          right: 0px;
+        }
+      }
+      .slider {
+        grid-auto-columns: 100%;
+      }
+    }
+  }
+}

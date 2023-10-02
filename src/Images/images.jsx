@@ -5,6 +5,8 @@ import restorani from './restorani1.jpg';
 import restorani2 from './restorani2.jpg';
 import restorani3 from './restorani3.jpg';
 import restorani4 from './restorani4.jpg';
+import greenfood from './greenfood .jpg';
+import best from './best.jpg';
 
 export {
   subotica,
@@ -14,4 +16,6 @@ export {
   restorani2,
   restorani3,
   restorani4,
+  greenfood,
+  best,
 };
