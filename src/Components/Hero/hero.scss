@@ -46,6 +46,11 @@
 }
 @media (max-width: 768px) {
   #hero {
+    form {
+      button {
+        padding-left: 0;
+      }
+    }
     h1 {
       font-size: 5.5rem;
     }

@@ -27,13 +27,13 @@ function NavBar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#hero">
-                Kategorije
+              <a className="nav-link" href="#map">
+                Mapa
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#hero">
-                Mapa
+                Kategorije
               </a>
             </li>
             <li className="nav-item">

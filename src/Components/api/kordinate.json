@@ -1,0 +1,114 @@
+[
+  {
+    "naziv": "bates",
+    "kordinate": [46.102774256515005, 19.666023177253354],
+    "opis": "Kafana Bates",
+    "boja": { "color": "green", "fillColor": "green" },
+    "id": "1"
+  },
+  {
+    "naziv": "boss",
+    "kordinate": [46.10163930729611, 19.66827987042927],
+    "opis": "Restoran Boss",
+    "boja": { "color": "blue", "fillColor": "blue" },
+    "id": "2"
+  },
+  {
+    "naziv": "renesansa",
+    "kordinate": [46.10228362766158, 19.667774647399565],
+    "opis": "Restoran Renaissance",
+    "boja": { "color": "blue", "fillColor": "blue" },
+    "id": "3"
+  },
+  {
+    "naziv": "best1",
+    "kordinate": [46.10253689350924, 19.666161007126437],
+    "opis": "Fast Food Best",
+    "boja": { "color": "red", "fillColor": "red" },
+    "id": "4"
+  },
+  {
+    "naziv": "best2",
+    "kordinate": [46.100354271857846, 19.67428501468472],
+    "opis": "Fast Food Best 2",
+    "boja": { "color": "red", "fillColor": "red" },
+    "id": "5"
+  },
+  {
+    "naziv": "greenfood",
+    "kordinate": [46.1004204988515, 19.66991817728649],
+    "opis": "Fast Food GreenFood",
+    "boja": { "color": "red", "fillColor": "red" },
+    "id": "6"
+  },
+  {
+    "naziv": "crunch",
+    "kordinate": [46.088095073732816, 19.668053352204115],
+    "opis": "Fast Food Crunch",
+    "boja": { "color": "red", "fillColor": "red" },
+    "id": "7"
+  },
+  {
+    "naziv": "girosway",
+    "kordinate": [46.102993206555155, 19.667740932717468],
+    "opis": "Fast Food Gyros Way",
+    "boja": { "color": "red", "fillColor": "red" },
+    "id": "8"
+  },
+  {
+    "naziv": "malagost",
+    "kordinate": [46.099085245381175, 19.760796039709952],
+    "opis": "Restoran Mala Gostiona",
+    "boja": { "color": "blue", "fillColor": "blue" },
+    "id": "9"
+  },
+  {
+    "naziv": "hambi",
+    "kordinate": [46.0967095687832, 19.66180761087396],
+    "opis": "Fast Food Zlatni Hamby",
+    "boja": { "color": "red", "fillColor": "red" },
+    "id": "10"
+  },
+  {
+    "naziv": "onore",
+    "kordinate": [46.10535072592257, 19.69020910390936],
+    "opis": "Kafić Onore",
+    "boja": { "color": "brown", "fillColor": "brown" },
+    "id": "11"
+  },
+  {
+    "naziv": "Dolce Vita",
+    "kordinate": [46.10020063741935, 19.668056268546174],
+    "opis": "Picerija Dolce Vita",
+    "boja": { "color": "orange", "fillColor": "orange" },
+    "id": "12"
+  },
+  {
+    "naziv": "Restoran Drina",
+    "kordinate": [46.10943989807292, 19.655522705658843],
+    "opis": "Restoran Drina",
+    "boja": { "color": "blue", "fillColor": "blue" },
+    "id": "13"
+  },
+  {
+    "naziv": "Pin Up snack bar",
+    "kordinate": [46.10303463046631, 19.667888804118743],
+    "opis": "Pin Up snack bar",
+    "boja": { "color": "red", "fillColor": "red" },
+    "id": "14"
+  },
+  {
+    "naziv": "Balkan Food",
+    "kordinate": [46.08703685873352, 19.671548354382004],
+    "opis": "Fast Food Balkan Food",
+    "boja": { "color": "red", "fillColor": "red" },
+    "id": "15"
+  },
+  {
+    "naziv": "Minipani",
+    "kordinate": [46.09968820926403, 19.665512402245476],
+    "opis": "Pekara Mini Pani",
+    "boja": { "color": "yellow", "fillColor": "yellow" },
+    "id": "15"
+  }
+]

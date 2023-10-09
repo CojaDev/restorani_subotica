@@ -1,83 +1,52 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import restaurants from '../api/api.json';
 
-import './popularno.scss';
+import './novo.scss';
 
-function Popularno() {
+function Novo() {
   useEffect(() => {
-    let slider = document.querySelector('#popularno .slider');
-    let btns = document.querySelectorAll('#popularno .wrapper p');
-    let firstCardWidth = slider.querySelector('.cards').offsetWidth + 16;
-    //let sliderChildrens = [...slider.children];
+    let slider2 = document.querySelector('#novo .slider');
+    let btns2 = document.querySelectorAll('#novo .wrapper p');
+    let firstCardWidth = slider2.querySelector('.cards').offsetWidth + 16;
 
     let isDragging = false,
       startX,
       startScrollLeft;
 
-    // let cardPerView = Math.round(slider.offsetWidth / firstCardWidth);
-
-    /* Infinite Scroll
-    sliderChildrens
-      .slice(-cardPerView)
-      .reverse()
-      .forEach((card) => {
-        slider.insertAdjacentHTML('afterbegin', card.outerHTML);
-      });
-    sliderChildrens.slice(-cardPerView).forEach((card) => {
-      slider.insertAdjacentHTML('beforeend', card.outerHTML);
-    });
-*/
-    btns.forEach((btn) => {
+    btns2.forEach((btn) => {
       btn.addEventListener('click', () => {
-        slider.scrollLeft +=
+        slider2.scrollLeft +=
           btn.id === 'back' ? -firstCardWidth : firstCardWidth;
       });
     });
 
     function dragStart(e) {
       isDragging = true;
-      slider.classList.add('dragging');
+      slider2.classList.add('dragging');
       startX = e.pageX;
-      startScrollLeft = slider.scrollLeft;
+      startScrollLeft = slider2.scrollLeft;
     }
     function dragStop() {
       isDragging = false;
-      slider.classList.remove('dragging');
+      slider2.classList.remove('dragging');
     }
 
     function dragging(e) {
       if (!isDragging) return;
-      slider.scrollLeft = startScrollLeft - (e.pageX - startX);
+      slider2.scrollLeft = startScrollLeft - (e.pageX - startX);
     }
 
-    /* function infinteScroll() {
-      if (slider.scrollLeft === 0) {
-        slider.classList.add('no-transition');
-        slider.scrollLeft = slider.scrollWidth - 2 * slider.offsetWidth;
-        slider.classList.remove('no-transition');
-      } else if (
-        Math.ceil(slider.scrollLeft) ===
-        slider.scrollWidth - slider.offsetWidth
-      ) {
-        slider.classList.add('no-transition');
-        slider.scrollLeft = slider.offsetWidth;
-        slider.classList.remove('no-transition');
-      }
-    }
-*/
-    slider.addEventListener('mousedown', dragStart);
-    slider.addEventListener('mousemove', dragging);
+    slider2.addEventListener('mousedown', dragStart);
+    slider2.addEventListener('mousemove', dragging);
     document.addEventListener('mouseup', dragStop);
-    //slider.addEventListener('scroll', infinteScroll);
 
     return () => {
-      // Clean up the event listeners when the component unmounts
-      slider.removeEventListener();
-      slider.removeEventListener();
+      slider2.removeEventListener();
+      slider2.removeEventListener();
       document.removeEventListener();
     };
   }, []);
@@ -94,6 +63,7 @@ function Popularno() {
       }
     });
   });
+
   const convertTimeToMinutes = (time) => {
     const [hours, minutes] = time.split(':');
     return parseInt(hours, 10) * 60 + parseInt(minutes, 10);
@@ -116,7 +86,6 @@ function Popularno() {
       const openingTime = convertTimeToMinutes(radnoVreme.otvaranje);
       let closingTime = convertTimeToMinutes(radnoVreme.zatvaranje);
 
-      // If closing time is smaller than opening time, add 24 hours to closing time
       if (closingTime < openingTime) {
         closingTime += 24 * 60; // 24 hours in minutes
       }
@@ -140,14 +109,14 @@ function Popularno() {
     return { ...restaurant, status };
   });
   console.log(updatedRestaurants);
-  const FirstSixRestaurants = restaurants.slice(0, 6);
+  const lastSixRestaurants = restaurants.slice(-6);
 
   return (
-    <section id="popularno">
+    <section id="novo">
       <Container>
         <Row>
           <Col className="naslov">
-            <h2>Popularno</h2>
+            <h2>Novo dodato</h2>
             <a href="">
               {' '}
               <p>Pogledaj Sve &gt;</p>
@@ -161,7 +130,7 @@ function Popularno() {
             <p id="back">{'<'}</p>
             <p id="next">{'>'}</p>
             <ul className="slider">
-              {FirstSixRestaurants.map((restaurant, i) => (
+              {lastSixRestaurants.map((restaurant, i) => (
                 <li className="cards" key={i}>
                   <div className="img">
                     <img
@@ -187,4 +156,4 @@ function Popularno() {
   );
 }
 
-export default Popularno;
+export default Novo;

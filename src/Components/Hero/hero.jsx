@@ -54,7 +54,7 @@ function Hero() {
       </div>
       <Container>
         <Row>
-          <Col md="6" className="content">
+          <Col lg="6" md="8" className="content">
             <h1>Restorani Subotica</h1>
             <p>
               Otkrijte najbolje ukuse grada uz našu ekskluzivnu selekciju
@@ -62,7 +62,7 @@ function Hero() {
             </p>
             <Form>
               <Row className="align-items-center">
-                <Col md="6" sm="auto" className="pe-0">
+                <Col lg="6" md="8" sm="auto" className="pe-0">
                   <Form.Control
                     className="mb-2 rounded-0"
                     id="inlineFormInput"

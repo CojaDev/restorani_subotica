@@ -1,4 +1,4 @@
-#popularno {
+#novo {
   width: 100%;
   height: auto;
   .naslov {
@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 30px 20px;
-    padding-top: 40px;
+    padding-top: 10px;
   }
   .wrapper {
     user-select: none;
@@ -162,7 +162,7 @@
 }
 
 @media screen and (max-width: 1250px) {
-  #popularno {
+  #novo {
     .wrapper {
       .slider {
         grid-auto-columns: calc((100% / 3) - 12px);
@@ -171,7 +171,7 @@
   }
 }
 @media screen and (max-width: 999px) {
-  #popularno {
+  #novo {
     .wrapper {
       p {
         &#back {
@@ -190,7 +190,11 @@
 }
 
 @media screen and (max-width: 600px) {
-  #popularno {
+  #novo {
+    .naslov {
+      padding-top: 30px;
+      padding-bottom: 15px;
+    }
     .wrapper {
       p {
         &#back {
