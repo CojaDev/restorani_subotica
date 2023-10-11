@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/restorani_subotica/static/css/main.3ef7760f.css",
-    "main.js": "/restorani_subotica/static/js/main.6e83c13c.js",
+    "main.js": "/restorani_subotica/static/js/main.f6ce1b4c.js",
     "static/media/fries.png": "/restorani_subotica/static/media/fries.264fb0835648575a4f34.png",
     "static/media/subotica2.jpg": "/restorani_subotica/static/media/subotica2.a6d00869da30917c482c.jpg",
     "static/media/subotica.jpg": "/restorani_subotica/static/media/subotica.61098d8965fbf127da9c.jpg",
@@ -20,10 +20,10 @@
     "static/media/kafana.png": "/restorani_subotica/static/media/kafana.f66540c0db24b9d98f0d.png",
     "index.html": "/restorani_subotica/index.html",
     "main.3ef7760f.css.map": "/restorani_subotica/static/css/main.3ef7760f.css.map",
-    "main.6e83c13c.js.map": "/restorani_subotica/static/js/main.6e83c13c.js.map"
+    "main.f6ce1b4c.js.map": "/restorani_subotica/static/js/main.f6ce1b4c.js.map"
   },
   "entrypoints": [
     "static/css/main.3ef7760f.css",
-    "static/js/main.6e83c13c.js"
+    "static/js/main.f6ce1b4c.js"
   ]
 }
