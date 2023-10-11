@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/CojaDev/restorani_subotica/static/css/main.3ef7760f.css",
+    "main.js": "/CojaDev/restorani_subotica/static/js/main.e4628e59.js",
+    "static/media/fries.png": "/CojaDev/restorani_subotica/static/media/fries.264fb0835648575a4f34.png",
+    "static/media/subotica2.jpg": "/CojaDev/restorani_subotica/static/media/subotica2.a6d00869da30917c482c.jpg",
+    "static/media/subotica.jpg": "/CojaDev/restorani_subotica/static/media/subotica.61098d8965fbf127da9c.jpg",
+    "static/media/restorani4.jpg": "/CojaDev/restorani_subotica/static/media/restorani4.6a5976decaba441b1218.jpg",
+    "static/media/restorani1.jpg": "/CojaDev/restorani_subotica/static/media/restorani1.f3326577e75dff8e52c2.jpg",
+    "static/media/greenfood .jpg": "/CojaDev/restorani_subotica/static/media/greenfood .448aa7065c6eb56fcdbb.jpg",
+    "static/media/restorani3.jpg": "/CojaDev/restorani_subotica/static/media/restorani3.e3c2d3e7361eed8928d3.jpg",
+    "static/media/subotica3.jpg": "/CojaDev/restorani_subotica/static/media/subotica3.2ad63beec51969bc1205.jpg",
+    "static/media/restorani2.jpg": "/CojaDev/restorani_subotica/static/media/restorani2.7db0d22ee61cf194527c.jpg",
+    "static/media/best.jpg": "/CojaDev/restorani_subotica/static/media/best.65766fae01bfb99f94af.jpg",
+    "static/media/restoran.png": "/CojaDev/restorani_subotica/static/media/restoran.31e4037d064788d509a7.png",
+    "static/media/picerija.png": "/CojaDev/restorani_subotica/static/media/picerija.c60948f04bc20a62e1be.png",
+    "static/media/pekara.png": "/CojaDev/restorani_subotica/static/media/pekara.41e9ef6b9f0e5dfe1903.png",
+    "static/media/fast.png": "/CojaDev/restorani_subotica/static/media/fast.27f5b7294bef19652cc8.png",
+    "static/media/kafa.png": "/CojaDev/restorani_subotica/static/media/kafa.7fdcc64bdf44a4c4bfcb.png",
+    "static/media/kafana.png": "/CojaDev/restorani_subotica/static/media/kafana.f66540c0db24b9d98f0d.png",
+    "index.html": "/CojaDev/restorani_subotica/index.html",
+    "main.3ef7760f.css.map": "/CojaDev/restorani_subotica/static/css/main.3ef7760f.css.map",
+    "main.e4628e59.js.map": "/CojaDev/restorani_subotica/static/js/main.e4628e59.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ef7760f.css",
+    "static/js/main.e4628e59.js"
+  ]
+}
