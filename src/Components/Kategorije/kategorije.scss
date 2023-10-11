@@ -1,0 +1,48 @@
+#kategorije {
+  .naslov {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+    padding-top: 40px;
+  }
+  .container {
+    flex-wrap: nowrap;
+  }
+  .kategorija {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      .blur {
+        background-color: rgba(255, 255, 255, 0.548);
+      }
+      img {
+        transform: scale(1.025);
+      }
+    }
+    .blur {
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 30%;
+      height: 30%;
+      position: absolute;
+      filter: blur(45px);
+      transition: 0.2s ease;
+      z-index: -1;
+    }
+    img {
+      max-width: 100px;
+      transition: 0.3s ease;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 25px;
+    }
+  }
+}

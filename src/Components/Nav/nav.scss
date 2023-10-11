@@ -1,40 +1,50 @@
 nav {
+  background: linear-gradient(180deg, #2e2e2e8f, #1b1b1b00);
   .container {
     padding: 0 20px;
   }
-
-  background: linear-gradient(180deg, #2e2e2e8f, #1b1b1b00);
   .nav-item {
     position: relative;
   }
   .nav-link {
     text-align: center;
+    z-index: 1;
     transition: 0.2s ease;
     color: #cccccc;
     text-transform: uppercase;
     &.active {
       color: white;
+      border-bottom: 0;
+
       &::after {
         width: 100%;
       }
       &:hover {
-        color: #cccccc;
+        color: #1b1b1b;
         &::after {
-          width: 0%;
+          height: 36px;
+          background-color: white;
         }
       }
     }
-    &:active {
-      transform: scale(0.98);
-    }
     &:hover {
       color: white;
+    }
+    &:active {
+      transition: 0.1s;
+      transform: scale(0.98);
+      color: #1b1b1b;
+      &::after {
+        height: 36px;
+        background-color: white;
+      }
     }
     &::after {
       transition: 0.3s ease;
       position: absolute;
       content: '';
       width: 0%;
+      z-index: -10 !important;
       background-color: #cccccc;
       height: 2px;
       left: 0;

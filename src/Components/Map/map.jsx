@@ -14,10 +14,6 @@ import './map.scss';
 import kordinate from '../api/kordinate.json';
 const map = () => {
   const subotica = [46.10031277534119, 19.665009421411956];
-  const bounds = [
-    [51.49, -0.08],
-    [51.5, -0.06],
-  ];
   return (
     <section id="map">
       <Container>

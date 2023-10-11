@@ -10,6 +10,7 @@
     padding-top: 10px;
   }
   .mapa {
+    border: 1px solid rgba(255, 255, 255, 0.459);
     height: 550px;
     width: 100%;
     overflow: hidden;
@@ -17,11 +18,11 @@
     .legends {
       user-select: none;
       position: absolute;
-      bottom: 5px;
-      left: 5px;
+      bottom: 3px;
+      left: 3px;
       z-index: 10;
       color: black;
-      background-color: #eef6f9;
+      background-color: #ffffff;
       display: flex;
       border: 1px solid rgba(34, 34, 34, 0.459);
       .legend {
@@ -38,7 +39,7 @@
       .boja {
         width: 20px;
         height: 20px;
-        border-radius: 50%;
+
         border: 1px solid rgba(34, 34, 34, 0.432);
         &.red {
           background-color: rgb(252, 54, 19);
@@ -65,6 +66,13 @@
       height: 100%;
       width: 100%;
       z-index: 5;
+      .leaflet-control-attribution {
+        a {
+          svg {
+            display: none !important;
+          }
+        }
+      }
     }
   }
 }

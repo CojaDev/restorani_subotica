@@ -1,0 +1,84 @@
+#footer {
+  width: 100%;
+  background-color: rgb(17, 17, 17);
+  margin-top: 100px;
+  .line {
+    height: 2px;
+    background-color: white;
+    width: 85px;
+    margin: 10px 0;
+  }
+
+  a p {
+    margin-bottom: 0.4rem;
+    position: relative;
+    transition: 0.2s ease;
+    cursor: pointer;
+    &::after {
+      position: absolute;
+      content: '';
+      transition: 0.2s ease;
+      left: 0;
+      bottom: 0px;
+      width: 0;
+      height: 2px;
+      background-color: rgba(255, 255, 255, 0.918);
+    }
+    &:hover::after {
+      width: 77px;
+    }
+    &:active {
+      transform: scale(0.99);
+    }
+    &:active::after {
+      width: 70px;
+    }
+  }
+  .social-icons {
+    i {
+      text-align: center;
+      font-size: 1.8rem;
+      position: relative;
+      margin-right: 10px;
+      z-index: 2;
+      padding: 5px;
+      transition: 0.2s ease-in-out;
+      &::after {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        border: 2px solid white;
+        transition: 0.2s ease-in-out;
+        z-index: -1;
+      }
+      &:first-child {
+        margin-left: 7px;
+        margin-right: 13px;
+      }
+      &:last-child {
+        margin-left: -2px;
+      }
+      &:hover {
+        color: rgb(17, 17, 17);
+      }
+      &:hover::after {
+        background-color: rgba(255, 255, 255, 0.945);
+      }
+    }
+  }
+  .donji {
+    margin-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.384);
+    p {
+      margin: 0;
+      font-size: 0.9rem;
+      a {
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+}

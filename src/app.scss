@@ -11,6 +11,27 @@ body {
   color: white;
   line-height: 1.42857143;
 }
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(196, 196, 196);
+}
+::-webkit-scrollbar-thumb:active {
+  background: white;
+}
 a {
   color: white;
   text-decoration: none;

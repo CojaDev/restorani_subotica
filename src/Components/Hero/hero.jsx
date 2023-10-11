@@ -1,14 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import {
-  subotica,
-  subotica2,
-  restorani,
-  restorani4,
-} from '../../Images/images.jsx';
+import { subotica2, subotica, restorani, fries } from '../../Images/images.jsx';
+import restarants from '../api/api.json';
 
 import './hero.scss';
+const LastTwoRestaurants = restarants.slice(-2);
 function Hero() {
   return (
     <section id="hero">
@@ -28,7 +25,7 @@ function Hero() {
           </div>
           <div className="carousel-item" data-bs-interval="8000">
             <img
-              src={subotica2}
+              src={subotica}
               className="d-block w-100"
               draggable="false"
               alt="sub2"
@@ -36,20 +33,30 @@ function Hero() {
           </div>
           <div className="carousel-item" data-bs-interval="8000">
             <img
-              src={subotica}
+              src={fries}
               className="d-block w-100"
               draggable="false"
-              alt="sub3"
+              alt="sub2"
             ></img>
           </div>
           <div className="carousel-item" data-bs-interval="8000">
             <img
-              src={restorani4}
-              className="d-block w-100"
+              src={subotica2}
               draggable="false"
-              alt="sub3"
+              className="d-block w-100"
+              alt="sub2"
             ></img>
           </div>
+          {LastTwoRestaurants.map((restaurant, i) => (
+            <div className="carousel-item" data-bs-interval="8000" key={i}>
+              <img
+                src={restaurant.slike[0]}
+                className="d-block w-100"
+                draggable="false"
+                alt="sub3"
+              ></img>
+            </div>
+          ))}
         </div>
       </div>
       <Container>

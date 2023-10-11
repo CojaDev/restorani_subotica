@@ -1,20 +1,27 @@
 import React from 'react';
 
-import NavBar from './Components/Nav/nav.jsx';
-import Hero from './Components/Hero/hero.jsx';
-import Popularno from './Components/Popularno/popularno.jsx';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Home from './Pages/home';
+import Restorani from './Pages/restorani';
+import Profilna from './Pages/profilna';
+import ZaVlasnike from './Pages/zaVlasnike';
+import NoPage from './Pages/noPage';
 import './app.scss';
-import Novo from './Components/Novo/novo.jsx';
-import Map from './Components/Map/map.jsx';
 
 const App = () => {
   return (
     <>
-      <NavBar />
-      <Hero />
-      <Popularno />
-      <Map />
-      <Novo />
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/restorani" element={<Restorani />} />
+          <Route path="/profilna" element={<Profilna />} />
+          <Route path="/ZaVlasnike" element={<ZaVlasnike />} />
+          <Route path="*" element={<NoPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 };

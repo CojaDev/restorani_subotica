@@ -5,7 +5,7 @@ function NavBar() {
   return (
     <nav className="navbar navbar-dark navbar-expand-lg nav fixed-top  p-3">
       <div className="container">
-        <a className="navbar-brand" href="#hero">
+        <a className="navbar-brand" href="/home">
           Restorani Subotica
         </a>
         <button
@@ -22,23 +22,28 @@ function NavBar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#hero">
+              <a className="nav-link" aria-current="page" href="/home">
+                Početna
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" aria-current="page" href="/restorani">
                 Restorani
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#map">
-                Mapa
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#hero">
+              <a className="nav-link" href="/home#kategorije">
                 Kategorije
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" href="#hero">
-                Za Vlasike
+              <a className="nav-link" href="/home#map">
+                Mapa
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link active" href="/ZaVlasnike">
+                Za Vlasnike
               </a>
             </li>
           </ul>
